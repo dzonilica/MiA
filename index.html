@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MiA Skadarlija — Mesto gde svaki zalogaj ima dušu. Tradicionalna srpska kuhinja u srcu Skadarlije." />
+  <title>MiA Skadarlija — Mesto gde svaki zalogaj ima dušu</title>
+
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Manrope:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============== LOADING SCREEN ============== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__ornament">
+        <svg viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M5 15 Q 50 5, 100 15 T 195 15" stroke="currentColor" stroke-width="1" fill="none"/>
+          <circle cx="100" cy="15" r="3" fill="currentColor"/>
+          <circle cx="60" cy="13" r="1.5" fill="currentColor"/>
+          <circle cx="140" cy="13" r="1.5" fill="currentColor"/>
+        </svg>
+      </div>
+      <img src="assets/images/logo.png" alt="MiA Skadarlija" class="loader__logo" />
+      <div class="loader__bar">
+        <div class="loader__bar-fill"></div>
+      </div>
+      <p class="loader__text">Pripremamo sto za vas...</p>
+    </div>
+  </div>
+
+  <!-- ============== NAVIGATION ============== -->
+  <header class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__brand">
+        <img src="assets/images/logo.png" alt="MiA Skadarlija" />
+      </a>
+      <nav class="nav__menu" id="navMenu">
+        <a href="#story" class="nav__link">Priča</a>
+        <a href="#specialties" class="nav__link">Specijaliteti</a>
+        <a href="#atmosphere" class="nav__link">Atmosfera</a>
+        <a href="#visit" class="nav__link">Posetite nas</a>
+        <a href="tel:0604738681" class="nav__cta">Rezervacije</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Meni">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero" id="hero">
+    <video class="hero__video" autoplay muted loop playsinline poster="assets/images/teletina.jpg">
+      <source src="assets/videos/restaurant-1.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__ornament hero__ornament--top">
+      <svg viewBox="0 0 600 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 30 L240 30 M360 30 L600 30" stroke="currentColor" stroke-width="1" fill="none"/>
+        <path d="M260 30 Q280 10, 300 30 T340 30" stroke="currentColor" stroke-width="1.2" fill="none"/>
+        <circle cx="300" cy="30" r="3" fill="currentColor"/>
+      </svg>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Skadarlija · MiA · Od srca</p>
+      <h1 class="hero__title">
+        <span class="hero__title-main">MiA</span>
+        <span class="hero__title-script">Skadarlija</span>
+      </h1>
+      <p class="hero__tagline">
+        Mesto gde svaki zalogaj <em>ima dušu</em>
+      </p>
+      <div class="hero__cta-row">
+        <a href="#specialties" class="btn btn--primary">Naši specijaliteti</a>
+        <a href="#visit" class="btn btn--ghost">
+          <span>Rezervišite sto</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Otkrijte priču</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============== STORY ============== -->
+  <section class="story" id="story">
+    <div class="story__container">
+      <div class="story__visual">
+        <div class="story__image-wrap">
+          <video autoplay muted loop playsinline class="story__video">
+            <source src="assets/videos/restaurant-2.mp4" type="video/mp4" />
+          </video>
+          <div class="story__frame"></div>
+        </div>
+        <div class="story__badge">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="0.5"/>
+            <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="0.5"/>
+            <text x="50" y="45" text-anchor="middle" font-family="Cinzel" font-size="9" fill="currentColor" letter-spacing="2">TRADICIJA</text>
+            <text x="50" y="58" text-anchor="middle" font-family="Cinzel" font-size="9" fill="currentColor" letter-spacing="2">I DUŠA</text>
+            <line x1="30" y1="50" x2="38" y2="50" stroke="currentColor" stroke-width="0.5"/>
+            <line x1="62" y1="50" x2="70" y2="50" stroke="currentColor" stroke-width="0.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="story__text">
+        <span class="section-eyebrow">— Naša priča</span>
+        <h2 class="section-title">
+          U srcu <span class="accent-script">Skadarlije</span>,<br>
+          gde tradicija živi
+        </h2>
+        <p class="story__lead">
+          Iza svakih vrata Skadarlije krije se priča — a naša počinje toplinom doma,
+          mirisima koji bude uspomene i jelima koja se spremaju kao nekada, sa pažnjom i poštovanjem.
+        </p>
+        <p>
+          U restoranu <strong>MiA</strong> verujemo da hrana nije samo obrok, već susret —
+          sa porodicom, sa prijateljima, sa samim sobom. Zato svaki tanjir koji izađe iz naše kuhinje
+          nosi pečat tradicije i toplinu domaćeg ognjišta.
+        </p>
+
+        <div class="story__pillars">
+          <div class="pillar">
+            <div class="pillar__icon">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M20 4 L24 14 L34 14 L26 21 L29 32 L20 25 L11 32 L14 21 L6 14 L16 14 Z"/>
+              </svg>
+            </div>
+            <h3>Domaći ukus</h3>
+            <p>Recepti preneseni s kolena na koleno, bez prečica.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M8 14 Q 20 6, 32 14 L32 30 Q 20 36, 8 30 Z"/>
+                <path d="M8 14 Q 20 22, 32 14"/>
+              </svg>
+            </div>
+            <h3>Sveže namirnice</h3>
+            <p>Biramo najbolje od lokalnih proizvođača, svakog dana.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M20 6 C 12 14, 12 22, 20 30 C 28 22, 28 14, 20 6 Z"/>
+                <circle cx="20" cy="18" r="2"/>
+              </svg>
+            </div>
+            <h3>Topla atmosfera</h3>
+            <p>Kafanski duh Skadarlije, uz osmeh i pesmu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="story__decor" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="0.3"/>
+        <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="0.3"/>
+        <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="0.3"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============== REELS / MOMENTS ============== -->
+  <section class="reels" id="reels">
+    <div class="reels__decor reels__decor--top" aria-hidden="true">
+      <svg viewBox="0 0 600 40" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="20" x2="240" y2="20" stroke="currentColor" stroke-width="0.5"/>
+        <path d="M260 20 Q 280 5, 300 20 T 340 20" stroke="currentColor" stroke-width="0.8" fill="none"/>
+        <circle cx="300" cy="20" r="2.5" fill="currentColor"/>
+        <line x1="360" y1="20" x2="600" y2="20" stroke="currentColor" stroke-width="0.5"/>
+      </svg>
+    </div>
+
+    <div class="reels__header">
+      <span class="section-eyebrow section-eyebrow--center section-eyebrow--light">— Trenuci kod nas</span>
+      <h2 class="section-title section-title--center section-title--light">
+        Život u <span class="accent-script">Skadarliji</span>
+      </h2>
+      <p class="reels__intro">
+        Mali isečci iz naše svakodnevice — pesma, miris pečenja, nasmejana lica
+        i topao osmeh dobrodošlice. Onako kako se kod nas živi.
+      </p>
+    </div>
+
+    <div class="reels__track">
+      <figure class="reel reel--1">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="assets/videos/reel-1.mp4" type="video/mp4" />
+        </video>
+        <span class="reel__corner reel__corner--tl"></span>
+        <span class="reel__corner reel__corner--tr"></span>
+        <span class="reel__corner reel__corner--bl"></span>
+        <span class="reel__corner reel__corner--br"></span>
+      </figure>
+
+      <figure class="reel reel--2">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="assets/videos/reel-2.mp4" type="video/mp4" />
+        </video>
+        <span class="reel__corner reel__corner--tl"></span>
+        <span class="reel__corner reel__corner--tr"></span>
+        <span class="reel__corner reel__corner--bl"></span>
+        <span class="reel__corner reel__corner--br"></span>
+      </figure>
+
+      <figure class="reel reel--3 reel--feature">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="assets/videos/reel-3.mp4" type="video/mp4" />
+        </video>
+        <span class="reel__corner reel__corner--tl"></span>
+        <span class="reel__corner reel__corner--tr"></span>
+        <span class="reel__corner reel__corner--bl"></span>
+        <span class="reel__corner reel__corner--br"></span>
+      </figure>
+
+      <figure class="reel reel--4">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="assets/videos/reel-4.mp4" type="video/mp4" />
+        </video>
+        <span class="reel__corner reel__corner--tl"></span>
+        <span class="reel__corner reel__corner--tr"></span>
+        <span class="reel__corner reel__corner--bl"></span>
+        <span class="reel__corner reel__corner--br"></span>
+      </figure>
+
+      <figure class="reel reel--5">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="assets/videos/reel-5.mp4" type="video/mp4" />
+        </video>
+        <span class="reel__corner reel__corner--tl"></span>
+        <span class="reel__corner reel__corner--tr"></span>
+        <span class="reel__corner reel__corner--bl"></span>
+        <span class="reel__corner reel__corner--br"></span>
+      </figure>
+    </div>
+
+    <p class="reels__signature">
+      <span>Mesto gde svaki zalogaj</span>
+      <em>ima dušu</em>
+    </p>
+  </section>
+
+  <!-- ============== SPECIALTIES ============== -->
+  <section class="specialties" id="specialties">
+    <div class="specialties__header">
+      <span class="section-eyebrow section-eyebrow--center">— Iz naše kuhinje</span>
+      <h2 class="section-title section-title--center">
+        Specijaliteti <span class="accent-script">kuće</span>
+      </h2>
+      <p class="specialties__intro">
+        Birana jela koja nose pečat naše tradicije. Spremamo ih polako, s ljubavlju —
+        jer dobar zalogaj ne trpi žurbu.
+      </p>
+    </div>
+
+    <div class="specialties__grid">
+
+      <article class="dish dish--featured">
+        <div class="dish__image">
+          <img src="assets/images/teletina.jpg" alt="Teletina ispod sača" loading="lazy" />
+          <div class="dish__badge">Preporuka</div>
+        </div>
+        <div class="dish__body">
+          <span class="dish__category">Glavno jelo · Ispod sača</span>
+          <h3 class="dish__title">Teletina ispod sača</h3>
+          <p class="dish__desc">
+            Pravi domaći specijalitet — meko, sočno meso pripremljeno na tradicionalan način,
+            sa krompirom i pažljivo biranim začinima. Sluša se vatra, a ne sat.
+          </p>
+          <div class="dish__pairing">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 2 L16 2 L15 10 Q 12 13, 9 10 Z"/>
+              <path d="M12 13 L12 20 M9 22 L15 22"/>
+            </svg>
+            <span>Uz čašu domaćeg crnog vina</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish">
+        <div class="dish__icon-frame">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.2">
+            <ellipse cx="40" cy="55" rx="28" ry="8"/>
+            <path d="M12 55 L 16 30 Q 40 22, 64 30 L 68 55"/>
+            <path d="M22 32 Q 40 26, 58 32"/>
+            <path d="M28 36 L 28 44 M 40 36 L 40 46 M 52 36 L 52 44"/>
+          </svg>
+        </div>
+        <div class="dish__body">
+          <span class="dish__category">Predjelo · Domaće</span>
+          <h3 class="dish__title">Domaća pljeskavica</h3>
+          <p class="dish__desc">
+            Sočna, ručno mešena, sa kajmakom i lukom. Klasik koji uvek ima dušu.
+          </p>
+        </div>
+      </article>
+
+      <article class="dish">
+        <div class="dish__icon-frame">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M20 30 L 60 30 L 56 60 L 24 60 Z"/>
+            <path d="M28 30 L 28 60 M 40 30 L 40 60 M 52 30 L 52 60"/>
+            <path d="M16 30 Q 40 18, 64 30"/>
+            <circle cx="40" cy="24" r="2"/>
+          </svg>
+        </div>
+        <div class="dish__body">
+          <span class="dish__category">Sa žara</span>
+          <h3 class="dish__title">Mešano meso</h3>
+          <p class="dish__desc">
+            Ćevapčići, ražnjići, vešalice — pažljivo pripremljeno na žaru, za pravo
+            srpsko slavlje za stolom.
+          </p>
+        </div>
+      </article>
+
+      <article class="dish">
+        <div class="dish__icon-frame">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M30 14 Q 30 10, 34 10 L 46 10 Q 50 10, 50 14 L 50 22"/>
+            <path d="M28 22 L 52 22 L 50 60 Q 40 64, 30 60 Z"/>
+            <path d="M34 30 Q 40 26, 46 30"/>
+          </svg>
+        </div>
+        <div class="dish__body">
+          <span class="dish__category">Vinska karta</span>
+          <h3 class="dish__title">Domaća vina</h3>
+          <p class="dish__desc">
+            Pažljivo birana vina sa naših vinograda — ukus tradicije u svakom gutljaju.
+          </p>
+        </div>
+      </article>
+
+      <article class="dish">
+        <div class="dish__icon-frame">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.2">
+            <ellipse cx="40" cy="42" rx="22" ry="14"/>
+            <path d="M20 38 Q 28 30, 40 32 Q 52 30, 60 38"/>
+            <path d="M30 50 Q 40 56, 50 50"/>
+            <path d="M32 22 L 32 34 M 40 18 L 40 32 M 48 22 L 48 34"/>
+          </svg>
+        </div>
+        <div class="dish__body">
+          <span class="dish__category">Predjelo</span>
+          <h3 class="dish__title">Kačamak sa kajmakom</h3>
+          <p class="dish__desc">
+            Topao, kremast — sa domaćim kajmakom i sirom, kao iz babine kuhinje.
+          </p>
+        </div>
+      </article>
+
+      <article class="dish">
+        <div class="dish__icon-frame">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle cx="40" cy="40" r="22"/>
+            <circle cx="40" cy="40" r="14"/>
+            <path d="M28 36 Q 40 30, 52 36"/>
+            <path d="M30 44 Q 40 50, 50 44"/>
+            <line x1="40" y1="18" x2="40" y2="22"/>
+            <line x1="40" y1="58" x2="40" y2="62"/>
+          </svg>
+        </div>
+        <div class="dish__body">
+          <span class="dish__category">Slatki kraj</span>
+          <h3 class="dish__title">Domaće slatko</h3>
+          <p class="dish__desc">
+            Krempita, štrudla, palačinke — desert koji vraća uspomene na detinjstvo.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="specialties__footer">
+      <p>I još mnogo toga vas čeka za stolom.</p>
+      <a href="#visit" class="btn btn--primary">Rezervišite sto</a>
+    </div>
+  </section>
+
+  <!-- ============== ATMOSPHERE / GALLERY ============== -->
+  <section class="atmosphere" id="atmosphere">
+    <div class="atmosphere__header">
+      <span class="section-eyebrow section-eyebrow--center section-eyebrow--light">— Atmosfera</span>
+      <h2 class="section-title section-title--center section-title--light">
+        Duh <span class="accent-script">Skadarlije</span>
+      </h2>
+      <p class="atmosphere__intro">
+        Zvuk tambura, miris pečenja, smeh za susednim stolom. Naša priča
+        se najbolje doživljava — uživo.
+      </p>
+    </div>
+
+    <div class="atmosphere__grid">
+      <div class="atm-tile atm-tile--1">
+        <video autoplay muted loop playsinline>
+          <source src="assets/videos/restaurant-1.mp4" type="video/mp4" />
+        </video>
+        <div class="atm-tile__caption">Kafanski duh</div>
+      </div>
+      <div class="atm-tile atm-tile--2">
+        <video autoplay muted loop playsinline>
+          <source src="assets/videos/restaurant-3.mp4" type="video/mp4" />
+        </video>
+        <div class="atm-tile__caption">Naša jela</div>
+      </div>
+      <div class="atm-tile atm-tile--3">
+        <video autoplay muted loop playsinline>
+          <source src="assets/videos/restaurant-4.mp4" type="video/mp4" />
+        </video>
+        <div class="atm-tile__caption">Iz kuhinje</div>
+      </div>
+      <div class="atm-tile atm-tile--4">
+        <video autoplay muted loop playsinline>
+          <source src="assets/videos/restaurant-2.mp4" type="video/mp4" />
+        </video>
+        <div class="atm-tile__caption">Trenutci</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== VISIT / CONTACT ============== -->
+  <section class="visit" id="visit">
+    <div class="visit__container">
+      <div class="visit__info">
+        <span class="section-eyebrow">— Posetite nas</span>
+        <h2 class="section-title">
+          Vidimo se <span class="accent-script">za stolom</span>
+        </h2>
+        <p class="visit__lead">
+          Najbolje je doći — da osetite, čujete, probate. Rezervišite svoj sto i
+          pripremićemo vam mesto kao da vas dugo čekamo.
+        </p>
+
+        <div class="visit__details">
+
+          <div class="detail">
+            <div class="detail__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2 C 7 2, 4 6, 4 11 C 4 17, 12 22, 12 22 C 12 22, 20 17, 20 11 C 20 6, 17 2, 12 2 Z"/>
+                <circle cx="12" cy="11" r="3"/>
+              </svg>
+            </div>
+            <div class="detail__body">
+              <span class="detail__label">Adresa</span>
+              <p>Braće Poljaković 21<br>Skadarlija, Beograd</p>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="detail__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6 L 12 12 L 16 14"/>
+              </svg>
+            </div>
+            <div class="detail__body">
+              <span class="detail__label">Radno vreme</span>
+              <p>
+                <span>Pon — Pet:</span> 09:00 — 00:00<br>
+                <span>Subota:</span> 09:00 — 01:00<br>
+                <span>Nedelja:</span> ne radimo
+              </p>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="detail__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M5 3 L 9 3 L 11 9 L 8 11 Q 10 15, 14 17 L 16 14 L 22 16 L 22 20 Q 22 21, 21 21 C 11 21, 3 13, 3 3 Q 3 3, 5 3 Z"/>
+              </svg>
+            </div>
+            <div class="detail__body">
+              <span class="detail__label">Rezervacije</span>
+              <p>
+                <a href="tel:0604738681">Ana — 060 473 8681</a><br>
+                <a href="tel:0695006051">Maja — 069 500 6051</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="visit__cta">
+          <a href="tel:0604738681" class="btn btn--primary btn--large">Pozovite nas</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Bra%C4%87e+Poljakovi%C4%87+21+Beograd" target="_blank" rel="noopener" class="btn btn--ghost btn--large">
+            <span>Otvori na mapi</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17 L17 7 M9 7 L17 7 L17 15"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="visit__visual">
+        <div class="visit__card">
+          <div class="visit__card-corner visit__card-corner--tl"></div>
+          <div class="visit__card-corner visit__card-corner--tr"></div>
+          <div class="visit__card-corner visit__card-corner--bl"></div>
+          <div class="visit__card-corner visit__card-corner--br"></div>
+
+          <div class="visit__card-inner">
+            <svg class="visit__seal" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="0.6"/>
+              <circle cx="60" cy="60" r="48" fill="none" stroke="currentColor" stroke-width="0.4"/>
+              <text x="60" y="50" text-anchor="middle" font-family="Cinzel" font-size="8" fill="currentColor" letter-spacing="3">EST. SKADARLIJA</text>
+              <line x1="40" y1="58" x2="80" y2="58" stroke="currentColor" stroke-width="0.4"/>
+              <text x="60" y="72" text-anchor="middle" font-family="Cinzel" font-size="14" fill="currentColor" font-weight="600" letter-spacing="2">MiA</text>
+              <text x="60" y="84" text-anchor="middle" font-family="Cinzel" font-size="6" fill="currentColor" letter-spacing="2">TRADICIJA & DUŠA</text>
+            </svg>
+
+            <h3 class="visit__card-title">Dobrodošli u<br><span class="accent-script">naš dom</span></h3>
+            <p class="visit__card-text">
+              Bilo da slavite, vodite goste iz inostranstva, ili samo želite
+              dobar zalogaj uz pesmu — naša vrata su uvek otvorena.
+            </p>
+
+            <div class="visit__card-divider">
+              <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="10" x2="80" y2="10" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="100" cy="10" r="3" fill="currentColor"/>
+                <line x1="120" y1="10" x2="200" y2="10" stroke="currentColor" stroke-width="0.5"/>
+              </svg>
+            </div>
+
+            <p class="visit__card-quote">"Mesto gde svaki zalogaj ima dušu"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <img src="assets/images/logo.png" alt="MiA Skadarlija" />
+        <p>Mesto gde svaki zalogaj ima dušu.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Kontakt</h4>
+        <p>Braće Poljaković 21, Beograd</p>
+        <p><a href="tel:0604738681">Ana · 060 473 8681</a></p>
+        <p><a href="tel:0695006051">Maja · 069 500 6051</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Radno vreme</h4>
+        <p>Pon — Pet · 09:00 — 00:00</p>
+        <p>Subota · 09:00 — 01:00</p>
+        <p>Nedelja · ne radimo</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Pratite nas</h4>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 8 L17 8 L17 5 L14 5 Q 11 5, 11 8 L 11 11 L 8 11 L 8 14 L 11 14 L 11 21 L 14 21 L 14 14 L 16.5 14 L 17 11 L 14 11 Z"/>
+            </svg>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Bra%C4%87e+Poljakovi%C4%87+21+Beograd" target="_blank" rel="noopener" aria-label="Mapa">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2 C 7 2, 4 6, 4 11 C 4 17, 12 22, 12 22 C 12 22, 20 17, 20 11 C 20 6, 17 2, 12 2 Z"/>
+              <circle cx="12" cy="11" r="3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__divider">
+        <svg viewBox="0 0 1200 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <line x1="0" y1="10" x2="560" y2="10" stroke="currentColor" stroke-width="0.5"/>
+          <path d="M580 10 Q 600 0, 620 10 T 640 10" stroke="currentColor" stroke-width="0.7" fill="none"/>
+          <line x1="640" y1="10" x2="1200" y2="10" stroke="currentColor" stroke-width="0.5"/>
+        </svg>
+      </div>
+      <p>© 2026 MiA Skadarlija · Sva prava zadržana</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
